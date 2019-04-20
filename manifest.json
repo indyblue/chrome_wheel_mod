@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Scroll Wheel Mod",
+  "description": "This is a very simple chrome extension to disable mouse wheel scrolling when the alt key is pressed. Very useful with (Linux) XFCE window manager, which uses alt+wheel to zoom.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
